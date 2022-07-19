@@ -1,0 +1,165 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2017  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+# Date created = 12:55:31  April 26, 2022
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		ELEC5566M-Mini-Project-evanso931_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone V"
+set_global_assignment -name DEVICE 5CSEMA5F31C6
+set_global_assignment -name TOP_LEVEL_ENTITY Pong
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 17.1.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "12:55:31  APRIL 26, 2022"
+set_global_assignment -name LAST_QUARTUS_VERSION "17.1.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name BOARD "DE1-SoC Board"
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH MoveBall_tb -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_NAME Debouncer_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id Debouncer_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME Debouncer_tb -section_id Debouncer_tb
+set_global_assignment -name EDA_TEST_BENCH_NAME HexTo7Segment_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id HexTo7Segment_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME HexTo7Segment_tb -section_id HexTo7Segment_tb
+set_global_assignment -name EDA_TEST_BENCH_NAME CounterNBit_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id CounterNBit_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME CounterNBit_tb -section_id CounterNBit_tb
+set_location_assignment PIN_AJ17 -to LT24Data[0]
+set_location_assignment PIN_AJ19 -to LT24Data[1]
+set_location_assignment PIN_AK19 -to LT24Data[2]
+set_location_assignment PIN_AK18 -to LT24Data[3]
+set_location_assignment PIN_AE16 -to LT24Data[4]
+set_location_assignment PIN_AF16 -to LT24Data[5]
+set_location_assignment PIN_AG17 -to LT24Data[6]
+set_location_assignment PIN_AA18 -to LT24Data[7]
+set_location_assignment PIN_AA19 -to LT24Data[8]
+set_location_assignment PIN_AE17 -to LT24Data[9]
+set_location_assignment PIN_AC20 -to LT24Data[10]
+set_location_assignment PIN_AH19 -to LT24Data[11]
+set_location_assignment PIN_AJ20 -to LT24Data[12]
+set_location_assignment PIN_AH20 -to LT24Data[13]
+set_location_assignment PIN_AK21 -to LT24Data[14]
+set_location_assignment PIN_AD19 -to LT24Data[15]
+set_location_assignment PIN_AG20 -to LT24Reset_n
+set_location_assignment PIN_AG16 -to LT24RS
+set_location_assignment PIN_AD20 -to LT24CS_n
+set_location_assignment PIN_AH18 -to LT24Rd_n
+set_location_assignment PIN_AH17 -to LT24Wr_n
+set_location_assignment PIN_AJ21 -to LT24LCDOn
+set_location_assignment PIN_AA16 -to clock
+set_location_assignment PIN_V16 -to resetApp
+set_global_assignment -name EDA_TEST_BENCH_NAME RefreshRate_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id RefreshRate_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME RefreshRate_tb -section_id RefreshRate_tb
+set_global_assignment -name EDA_TEST_BENCH_NAME MoveBall_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id MoveBall_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME MoveBall_tb -section_id MoveBall_tb
+set_global_assignment -name EDA_TEST_BENCH_NAME MovePaddle_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id MovePaddle_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME MovePaddle_tb -section_id MovePaddle_tb
+set_global_assignment -name EDA_TEST_BENCH_NAME BinaryToBCD_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id BinaryToBCD_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME BinaryToBCD_tb -section_id BinaryToBCD_tb
+set_location_assignment PIN_AH28 -to segZero[0]
+set_location_assignment PIN_AG28 -to segZero[1]
+set_location_assignment PIN_AF28 -to segZero[2]
+set_location_assignment PIN_AG27 -to segZero[3]
+set_location_assignment PIN_AE28 -to segZero[4]
+set_location_assignment PIN_AE27 -to segZero[5]
+set_location_assignment PIN_AE26 -to segZero[6]
+set_location_assignment PIN_AD27 -to segOne[0]
+set_location_assignment PIN_AF30 -to segOne[1]
+set_location_assignment PIN_AF29 -to segOne[2]
+set_location_assignment PIN_AG30 -to segOne[3]
+set_location_assignment PIN_AH30 -to segOne[4]
+set_location_assignment PIN_AH29 -to segOne[5]
+set_location_assignment PIN_AJ29 -to segOne[6]
+set_location_assignment PIN_W25 -to segFour[0]
+set_location_assignment PIN_V23 -to segFour[1]
+set_location_assignment PIN_W24 -to segFour[2]
+set_location_assignment PIN_W22 -to segFour[3]
+set_location_assignment PIN_Y24 -to segFour[4]
+set_location_assignment PIN_Y23 -to segFour[5]
+set_location_assignment PIN_AA24 -to segFour[6]
+set_location_assignment PIN_AA25 -to segFive[0]
+set_location_assignment PIN_AA26 -to segFive[1]
+set_location_assignment PIN_AB26 -to segFive[2]
+set_location_assignment PIN_AB27 -to segFive[3]
+set_location_assignment PIN_Y27 -to segFive[4]
+set_location_assignment PIN_AA28 -to segFive[5]
+set_location_assignment PIN_V25 -to segFive[6]
+set_global_assignment -name EDA_TEST_BENCH_FILE Debouncer_tb.v -section_id Debouncer_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE HexTo7Segment_tb.v -section_id HexTo7Segment_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE CounterNBit_tb.v -section_id CounterNBit_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE RefreshRate_tb.v -section_id RefreshRate_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE MoveBall_tb.v -section_id MoveBall_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE MovePaddle_tb.v -section_id MovePaddle_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE BinaryToBCD_tb.v -section_id BinaryToBCD_tb
+set_global_assignment -name VERILOG_FILE Pong.v
+set_global_assignment -name VERILOG_FILE BinaryToBCD_tb.v
+set_global_assignment -name VERILOG_FILE BinaryToBCD.v
+set_global_assignment -name VERILOG_FILE GameEngine.v
+set_global_assignment -name VERILOG_FILE MovePaddle_tb.v
+set_global_assignment -name VERILOG_FILE MovePaddle.v
+set_global_assignment -name VERILOG_FILE RefreshRate_tb.v
+set_global_assignment -name VERILOG_FILE RefreshRate.v
+set_global_assignment -name VERILOG_FILE MoveBall_tb.v
+set_global_assignment -name VERILOG_FILE Frequency_Divider.v
+set_global_assignment -name VERILOG_FILE MoveBall.v
+set_global_assignment -name VERILOG_FILE UpCounterNbit.v
+set_global_assignment -name SDC_FILE LT24Display.sdc
+set_global_assignment -name VERILOG_FILE LT24Top_tb.v
+set_global_assignment -name VERILOG_FILE LT24Display.v
+set_global_assignment -name VERILOG_FILE CounterNBit_tb.v
+set_global_assignment -name VERILOG_FILE CounterNBit.v
+set_global_assignment -name VERILOG_FILE HexTo7Segment_tb.v
+set_global_assignment -name VERILOG_FILE HexTo7Segment.v
+set_global_assignment -name VERILOG_FILE Debouncer_tb.v
+set_global_assignment -name VERILOG_FILE Debouncer.v
+set_global_assignment -name TCL_SCRIPT_FILE set_LCD_pin_locs.tcl
+set_location_assignment PIN_AA14 -to key0
+set_location_assignment PIN_AA15 -to key1
+set_location_assignment PIN_W15 -to key2
+set_location_assignment PIN_Y16 -to key3
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
