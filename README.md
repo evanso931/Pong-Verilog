@@ -1,4 +1,4 @@
-# ELEC5566M Mini-Project Reposity - Pong
+# Pong - Verilog
 
 FPGA Verilog project of the arcade game Pong for the DE1-SoC board
 
