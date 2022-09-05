@@ -35,12 +35,12 @@ The following files are provided:
 
 Pong High-Level System Block Diagram
 
-![alt text](https://github.com/leeds-embedded-systems/ELEC5566M-Mini-Project-evanso931/blob/main/Pictures/Pong%20FPGA%20High-Level%20System%20Diagram.png?raw=true)
+![alt text](https://github.com/evanso931/Pong-Verilog/blob/main/Pictures/Pong%20FPGA%20High-Level%20System%20Diagram.png?raw=true)
 
 Pong File Hierarchy Block Diagram
 
-![alt text](https://github.com/leeds-embedded-systems/ELEC5566M-Mini-Project-evanso931/blob/main/Pictures/Pong%20File%20Hierarchy.png?raw=true)
+![alt text](https://github.com/evanso931/Pong-Verilog/blob/main/Pictures/Pong%20File%20Hierarchy.png?raw=true)
 
 Pong State Machine
 
-![alt text](https://github.com/leeds-embedded-systems/ELEC5566M-Mini-Project-evanso931/blob/main/Pictures/Pong%20Finite%20State%20Machine.png?raw=true)
+![alt text](https://github.com/evanso931/Pong-Verilog/blob/main/Pictures/Pong%20Finite%20State%20Machine.png?raw=true)
